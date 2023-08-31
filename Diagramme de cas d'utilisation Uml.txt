@@ -1,0 +1,13 @@
+Question n°1:
+Acteur: Le client est l'acteur de l'action et du processus d'actions. il est la personne cherchant à recharger le passe navigo.
+action: l'action est de charger le passe navigo grâce à une borne et d'en suivre les instructions.
+Question n°2:
+Non, l'on ne définit pas un nouvel acteur puisque l'acteur n'est autre qu'un client, donc Jojo cherchant à charger le titre Navigo de son fils le fait en tant que client et non en tant que technicien.
+le client prend son passe navigo, ou le passe navigo d'une des personnes intéressées, le met sur une borne, ce qui amène la machine à l'authentification de l'utilisateur, puisque chaque passe dispose d'une identification personnel. le client rentre le type de trajet qu'il souhaite sur quelle durée, ensuite il paie. après le paiement, le passe enregistre la transaction et recharge le passe.
+Question n°3:
+Oui. Comme je l'ai susmentionné dans la question précédente, afin que Jojo devienne un nouvel acteur dans la modélisation du User Case, cela nécessite qu'il intéragisse avec l'ensemble du système de titre navigo non en tant que CLIENT, mais en tant que TECHNICIEN !
+Pour modéliser ceci, imaginons que Jojo ait accès à la machine. il a la possibilité par exemple de modifier des éléments au sein de la machine, ainsi que de supprimer des éléments. Imaginons qu'un client souhaite acheter un titre mais que la transaction ne se valide jamais, Jojo ira vérifier si le lien secondaire entre la fonction Payer, le paiement par carte/virement et la banque est bien présent.
+Dans le cas où un client a acheté un titre mais qu'il ne parvient pas à s'enregistrer sur son titre, il peut avoir accès aux informations de la borne afin de vérifier si il n'y a pas en amont un problème entre le fait d'acheter un titre et de recevoir le produit (l'abonnement/titre de transport); obtenir le titre de transport est inclus dans le fait d'acheter le titre.
+Question n°4:
+Pour modéliser ça, il faut mettre en avant le fait qu'ils peuvent communiquer au client des éléments concernant leurs titres de transport, leurs abonnements ou bien même agir en cas de souci avec la borne. Dans la représentation de modélisation, ils sont représentés par la flèche d'héritage, où ils disposent de compétences qui leurs appartiennent dont des compétences détenues par un autre acteur, dans ce contexte le technicien.
+le technicien, en revanche, ne dispose pas des compétences dont dispose l'agent (possibilité d'annuler une commande de passe etc etc...)
